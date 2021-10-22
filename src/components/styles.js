@@ -1,16 +1,15 @@
-import styled from 'styled-components'
-import meditacao from '../img/meditacao.jpg';
+import styled, {css} from "styled-components";
 
 export const MainContent = styled.div`
     display: flex;
     justify-content: center;
     width: 100vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: #0a294a;
+    height: 100%;
+    margin-top: 2vh;
 `;
 
 export const ContainerContent = styled.div`
-    width: 50%;
+    width: 75%;
     background: white;
     display: flex;
     flex-direction: row;
@@ -20,7 +19,7 @@ export const BoxCenter = styled.div`
      flex: 1;
     width: 20px;
     align-content: flex-end;
-    padding: 40px;
+    padding: 80px 15px;
     line-height: 33px;
     height: 100%;
 `;
@@ -64,7 +63,7 @@ export const BoxLeft = styled.div`
     background: black;
     width: 50%;
     height: 100%;
-    background-image: url(img/meditacao.jpg);
+    background-image: url(${props => props.image_url});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -89,21 +88,25 @@ export const TextCenter = styled.div`
     text-align: center; 
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h4`
     text-align: center; 
 `;
-    
-export const SubTitleV = styled.h2`
+
+export const TitleSub = styled.h5`
+    text-align: center; 
+`;
+   
+export const SubTitleV = styled.h5`
     text-align: center;
     color: #63c99a;
 `;
 
-export const SubTitleVi = styled.h2`
+export const SubTitleVi = styled.h5`
     text-align: center;
     color: #8a113c;    
 `;
 
-export const SubTitleL = styled.h2`
+export const SubTitleL = styled.h5`
     text-align: center;
     color: #fe912a;
 `;
@@ -118,3 +121,16 @@ export const Button = styled.input`
     cursor: pointer;
 `;
 
+export const Lista = styled.ul`
+    margin: 16px 0px;
+    padding-bottom: 20px;
+    display: inline-flex;
+    position: absolute;
+`;
+
+export const ItemLista = styled.li`
+    display: block;
+    padding: 10px;
+    background: #0a294a;
+    margin-right: 5px;
+`;

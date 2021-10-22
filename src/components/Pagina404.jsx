@@ -6,6 +6,7 @@ export const Paragraph = styled.p`
     font-size: 40px;
     text-align: center;
     margin-top: 80px;
+    color: white;
 `;
 
 const Img = styled.img`

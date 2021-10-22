@@ -8,6 +8,9 @@ const AtividadeEstilo = styled.div`
 const Imagem = styled.img`
     height: auto;
     width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 `;
 
 function Atividade(props) {

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
+import meditacao from '../img/meditacao.jpg';
 import { Title, ContainerLoginBack, ContainerLogin, BoxLeft, BoxRight, TextCenter } from './styles';
 
 function Registro() {
@@ -13,7 +14,7 @@ function Registro() {
     return ( 
         <ContainerLoginBack>
             <ContainerLogin>
-                <BoxLeft></BoxLeft>
+                <BoxLeft image_url={meditacao}></BoxLeft>               
                 <BoxRight>
 
                     <Title>
@@ -46,7 +47,7 @@ function Registro() {
                             </select>
                         </TextCenter>
                         <TextCenter>
-                            <input class="btn btn-primary" type="submit" value="Criar seu cadastro"></input>
+                            <input className="button" type="submit" value="Criar seu cadastro"></input>
                         </TextCenter>
                     </form>                   
                 </BoxRight>

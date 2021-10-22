@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useHistory } from "react-router-dom";
+import meditacao from '../img/meditacao.jpg';
 import { Title, ContainerLoginBack, ContainerLogin, BoxLeft, BoxRight, TextCenter, TextCenterP  } from './styles';
 
 function Login() {
@@ -13,10 +14,10 @@ function Login() {
     return ( 
         <ContainerLoginBack>
             <ContainerLogin>
-                <BoxLeft></BoxLeft>
+                <BoxLeft image_url={meditacao}></BoxLeft>
                 <BoxRight>
                     <Title>
-                        seja bem vindo
+                        Seja bem vindo !
                     </Title>
                     <form onSubmit={fazerLogin}>
                         <TextCenter>
@@ -30,11 +31,11 @@ function Login() {
                             <input type="password" name="txtSenha" id="idTxtSenha" placeholder="Senha"/> 
                         </TextCenter>
                         <TextCenter>
-                            <input class="button" type="submit" value="Enviar"/>
+                            <input className="button" type="submit" value="Enviar"/>
                         </TextCenter>
                         <TextCenterP>
-                            Não tem cadastro? 
-                            <Link to="/Registro">Registre-se</Link>
+                            Não tem cadastro ? 
+                            <Link to="/Registro"> Registre-se </Link>
                         </TextCenterP>
                     </form>
                 </BoxRight>

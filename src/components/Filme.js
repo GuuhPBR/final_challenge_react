@@ -1,4 +1,5 @@
 import React from 'react';
+import Navigation from './Navigation.js';
 import Atividade from './Atividade.js';
 import toystory from '../img/toystory.jpg';
 import bobesponja from '../img/bobesponja.jpg';
@@ -10,7 +11,8 @@ import { BoxCenter, ContainerContent, TextCenter, Title, MainContent  } from './
 function Filme() {
     return ( 
         <MainContent>
-            <ContainerContent>    
+            <ContainerContent>
+                <Navigation/>
                 <BoxCenter>
                     <Title>Lista de filmes</Title>
                     <br/>
